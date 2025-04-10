@@ -1236,3 +1236,11 @@ class AzureAISearch(dspy.Retrieve):
                 logging.error(f"Error occurs when searching query {query}: {e}")
 
         return collected_results
+# Nếu chưa có sẵn, thêm vào cuối file rm.py
+class WikipediaRM:
+    def __init__(self):
+        pass
+
+    def retrieve(self, query: str) -> str:
+        # Giả lập truy xuất từ Wikipedia
+        return f"Thông tin liên quan đến: {query} từ Wikipedia (giả lập)"
