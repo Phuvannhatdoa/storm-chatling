@@ -3,25 +3,33 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# mac
+# Cấu hình môi trường ảo
+venv/
+env/
+.venv/
+ENV/
+
+# Thư mục cache
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Dotenv
+.env
+
+# VSCode settings
+.vscode/
+
+# MacOS
 .DS_Store
 
-# Other
-.vscode
-*.tsv
-*.pt
-gpt*.txt
-*.env
-local/
-local_*
-build/
-*.egg-info/
-.idea
-.venv
-
-# Project-specific
-secrets.toml
+# Log files
 *.log
-*/assertion.log
-*results/
-.venv/
+
+# Tạm
+*.bak
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
